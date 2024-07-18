@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(247, 247, 247);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main{
+  margin-bottom: 80px;
+}
+
+/*Nav bar*/
+.appTitle, .copyRight, .navIconText{
+  display: none;
+}
+.side-bar-menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  width: 100%;
+  height: 75px;
+  bottom: 0;
+  left: 0;
+  /* border-top: 1px solid #b8b8b8; */
+  z-index: 999;
+}
+
+/*Home*/
+.homeContent{
+  overflow: auto;
+}
+.showSpentBox{
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+} 
+.showSpentBox span{
+  display: block;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+.homeIcons{
+  border-radius: 50%;
+  color: white;
+  opacity: 0.6;
+  padding: 2px;
+} 
+
+
+/*------Friends----------------*/
+form.friendForm{
+  display: table;
+}
+.friendForm label{
+  display: flex;
+  /* font-size: 2rem; */
+}
+
+.friendIconForm input{
+  font-weight: 500;
+  font-size: 2rem;
+  border: 2px solid red;
+}
+
+.splitForm .splitInfor input{
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 20px;
+  width: 85%;
+  min-height: 50px;
+  padding: 1px;
+  padding-left: 4px;
+}
+.paidByInput{
+  width: 50%;
+}
+.splitForm label{
+  display: flex;
+  gap: 5px;
+}
+
+.splitWithForm{
+  margin: 30px 4rem;
+}
+.splitWithForm label{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.costbox{
+  margin-left: auto;
+}
+
+.submitBtn{
+  box-shadow: 0 5px rgb(144, 148, 151);
+}.submitBtn:active{
+  box-shadow: none;
+  transform: translateY(5px);
+}   .submitBtn:hover{
+  opacity: 0.8;
+} 
+
+
+/*---------------history---------------*/
+th, td{
+  border-width: 2px;
+  padding: 4px 3px;
+}
+.col-1{
+  width: 12%;
+}
+.col-2{
+  width: 12%;
+}
+.col-3{
+  width: 20%;
+}
+
+
+@media screen and (min-width: 768px){
+  
+  .splitWithForm label{
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  main{
+    margin-bottom: 5px;
+  }
+  .appTitle, .copyRight, .navIconText{
+    display: block;
+  }
+  .side-bar-menu {
+      position: static;
+      flex-direction: column;
+      gap: 1.4rem;
+      background-repeat: repeat;
+      padding-top: 50px;
+      margin-right: 1rem;
+      height: 100%;
+  }
+  th, td{
+    padding: 1rem;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
