@@ -1,8 +1,8 @@
 # React App: Split Money
 
-![image](https://github.com/Michelle-mm/SplitMoney_App/blob/main/splitApp-home-lg.JPG)
-![image](https://github.com/Michelle-mm/SplitMoney_App/blob/main/splitApp-home-sm.JPG)
-![image](https://github.com/Michelle-mm/SplitMoney_App/blob/main/splitApp-split.JPG)
+![image](src/imgs/splitApp-home-lg.JPG)
+![image](https://github.com/Michelle-mm/SplitMoney_App/src/imgs/splitApp-home-sm.JPG)
+![image](https://github.com/Michelle-mm/SplitMoney_App/src/imgs/splitApp-split.JPG)
 
 ### This project use: MongoDB Atlas, Express, React.js, Node.js, CSS, JavaScript, Tailwind.
 
